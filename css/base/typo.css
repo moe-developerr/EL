@@ -1,0 +1,46 @@
+/*=================
+	red: #D40D0D;
+	dark red: #BD0B0B;
+	green: #0F9A0F;
+	dark green: #0F7D0F;
+	blue: #003366;
+	white: #fff;
+	light gray: #ddd;
+	darker gray: #aaa;
+	dark gray: #333;
+=================*/
+
+* {
+	border-radius: 0 !important;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+a,
+a:hover {
+	color: #666;
+}
+
+.has-padding-bottom {
+	padding-bottom: 40px;
+}
+
+.has-padding {
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+.bg-gray {
+	background-color: #ddd;
+}
+
+/*
+Uncomment to conditionally load arabic font in head.php
+font-family: 'Droid Arabic Kufi';
+font-weight: 400;
+font-weight: 700;
+*/
