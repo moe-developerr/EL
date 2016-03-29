@@ -1,9 +1,9 @@
 /*=================
-	red: #D40D0D;
+	red: #b80304;
 	dark red: #BD0B0B;
-	green: #0F9A0F;
+	green: #07a959;
 	dark green: #0F7D0F;
-	blue: #003366;
+	blue: #1e4582;
 	white: #fff;
 	light gray: #ddd;
 	darker gray: #aaa;
@@ -12,6 +12,10 @@
 
 * {
 	border-radius: 0 !important;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
 }
 
 ul {
@@ -25,17 +29,26 @@ a:hover {
 	color: #666;
 }
 
+.fa:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
 .has-padding-bottom {
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 
 .has-padding {
-	padding-bottom: 40px;
-	padding-top: 40px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 }
 
 .bg-gray {
 	background-color: #ddd;
+}
+
+.bg-green {
+	background-color: #07a959;
 }
 
 /*
