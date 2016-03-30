@@ -1,0 +1,61 @@
+body {
+	font-family: 'Droid Arabic Kufi';
+}
+
+.main-content,
+.site-footer,
+.site-header {
+	direction: rtl;
+}
+
+.site-header__top {
+	direction: ltr;
+}
+
+.site-header__link--green {
+	font-family: 'Raleway', sans-serif;
+}
+
+.search-box {
+	left: 15px;
+}
+
+.site-header__links,
+.search-box__search-field {
+	direction: rtl;
+}
+
+.newsletter__submit,
+.search-box__submit {
+	left: 3px;
+	right: auto;
+}
+
+.title-icon {
+	margin-left: 10px;
+	margin-right: 0;
+}
+
+.logo--first {
+	margin-left: auto;
+}
+
+@media (min-width: 768px) {
+	.site-nav__tab,
+	.site-nav__list-item {
+		float: right;
+	}
+}
+
+@media (max-width: 767px) {
+	.logo--second {
+	    margin-right: auto;
+	    margin-left: 0;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.site-header__link--active {
+		padding: 0 15px;
+	}
+}

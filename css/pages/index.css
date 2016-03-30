@@ -64,6 +64,7 @@
 
 .article:hover {
 	text-decoration: none;
+	background-color: #eee;
 }
 
 .article__body {
@@ -77,6 +78,18 @@
 
 .title-icon {
 	margin-right: 10px;
+	width: 46px;
+	height: 46px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.title-icon--highlight {
+	background: url(../../images/highlights.png);
+}
+
+.title-icon--new {
+	background: url(../../images/new.png);
 }
 
 .articles--highlights .article__title,
@@ -92,6 +105,27 @@
 .slider {
 	height: 570px;
 	border-bottom: 1px solid #fff;
+}
+
+.rsDefault .rsArrowIcn {
+	background-image: url(../../images/slider-arrows.png);
+	width: 28px;
+	height: 50px;
+	margin-left: -14px;
+	margin-top: -25px;
+}
+
+.rsDefault .rsArrowIcn,
+.rsDefault .rsArrowIcn:hover {
+	background-color: transparent;
+}
+
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn {
+	background-position: -28px 0;
+}
+
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn {
+	background-position: 0 0;
 }
 
 /*==============

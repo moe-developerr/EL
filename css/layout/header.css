@@ -5,23 +5,28 @@
 	position: relative;
 }
 
+.site-header__top {
+	padding-bottom: 5px;
+}
+
 /*=================
 	Site header links
 =================*/
 .site-header__links {
 	padding: 0;
-	margin-bottom: 30px;
+	position: relative;
 	z-index: 1000;
 }
 
-.site-header__links li {
+.site-header__link,
+.site-header__btn {
+	display: block;
 	height: 40px;
 	line-height: 40px;
 	border-left: 1px solid #fff;
 }
 
 .site-header__link {
-	display: block;
 	position: relative;
 }
 
@@ -93,11 +98,19 @@
 	font-size: 2rem;
 }
 
+.search-box__form {
+	position: relative;
+	float: right;
+	max-width: 288px;
+	width: 100%;	
+}
+
 .search-btn:hover {
 	background-color: #0F7D0F;
 }
 
-.search-btn:hover span {
+.search-btn:hover span,
+.search-btn:focus {
 	color: #fff;
 }
 
@@ -111,40 +124,105 @@
 	position: absolute;
 	left: 0;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	width: 100%;
 	text-align: center;
 }
 
-.searchbox {
+.search-box {
+	width: 100%;
+	z-index: 1000;
 	display: none;
 }
 
-.searchbox--active {
+.search-box--active {
 	display: block;
 }
 
 @media all and (max-width: 767px) {
-	.site-nav {
-		display: none;
+	.site-header {
+		padding-bottom: 0;
 	}
-}
 
-/* Tablet plus */
-@media all and (min-width: 768px) {
-	.site-header__link--active {
-		padding: 0 25px;
+	.site-header__links {
+		margin-bottom: 10px;
+	}
+
+	.site-header__logo-wrapper {
+		display: inline-block;
+		float: none;
+	}
+
+	.logo--second {
+		margin-left: auto;
 	}
 
 	/*========
 		Site nav
 	========*/
-	.site-nav {
-		position: absolute;
-		width: 100%;
-		z-index: 1000;
+	.site-nav,
+	.mobile-site-nav,
+	.mobile-site-nav__sub-list {
+		display: none;
 	}
 	
+	.mobile-site-nav--active {
+		display: block;
+	}
+
+	.mobile-site-nav {
+		position: absolute;
+		right: 0;
+		top: 40px;
+		width: 100%;
+		background-color: #b80304;
+		color: #fff;
+		padding: 10px;
+		border-top: 1px solid  #fff;
+	}
+
+	.mobile-site-nav__sub-list--active {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	.mobile-site-nav__link {
+		display: block;
+		padding: 5px 0;
+		line-height: 1;
+		color: #fff;
+	}
+
+	.mobile-site-nav__link:hover {
+		background-color: #fff;
+		color: #333;
+		text-decoration: none;
+	}
+}
+
+/* Tablet plus */
+@media all and (min-width: 768px) {
+	.site-header {
+		padding-bottom: 60px;
+	}
+
+	.site-header__link--active {
+		padding: 0 25px;
+	}
+
+	.logo--second {
+		margin: auto;
+	}
+
+	.logo--third {
+		margin: auto;
+	}
+
+	/*========
+		Site nav
+	========*/
 	.site-nav__tab h4,
 	.site-nav__list-item,
 	.site-nav__sub-list-item {
@@ -165,7 +243,7 @@
 		border-bottom: 1px solid #fff;
 		float: left;
 	}
-	
+
 	.site-nav__tab,
 	.site-nav__tab h4 {
 		height: 60px;
@@ -174,10 +252,11 @@
 	}
 
 	.site-nav__tab:not(.site-nav__tab--active) {
-		background-color: #ddd;
+		background-color: #eee;
 	}
 
-	.site-nav__tab--active {
+	.site-nav__tab--active,
+	.site-nav__tab:hover {
 		background-color: #b80304;
 		color: #fff;
 	}
@@ -186,21 +265,26 @@
 	.site-nav__list {
 		display: none;
 		position: absolute;
-		left: 0;
-		top: 100%;
+		top: auto;
 		z-index: 1000;
 	}
 
 	.site-nav__list {
 		background-color: #b80304;
 		color: #fff;
-		width: 100%;
+		left: 15px;
+		right: 15px;
+	}
+
+	.site-nav__list--active {
+		display: block;
 	}
 
 	.site-nav__sub-list {
 		width: 100%;
 		color: #333;
 		padding: 20px 0;
+		left: 0;
 	}
 
 	.site-nav__list-item {
@@ -236,25 +320,48 @@
 
 }
 
-/* Laptop plus */
-@media all and (min-width: 992px) {
+/* upto small desktops */
+@media all and (max-width: 1199px) {
+	.search-box {
+		position: absolute;
+		right: 15px;
+		top: 40px;
+		max-width: 288px;
+		border-top: 1px solid #fff;
+	}
 
+	.search-box .search-box__search-field {
+		max-width: 100%;
+	}
+
+	.search-box__submit {
+		top: 0;
+		right: 0;
+	}
+
+	.search-box__submit::before {
+		height: 46px;
+		line-height: 46px;
+	}
+
+	.search-box .form-group {
+		margin-bottom: 0;
+	}
 }
 
 /* Large Desktops */
 @media all and (min-width: 1200px) {
 	.site-header__logo-wrapper {
 		padding-top: 30px;
-		border-right: 1px solid #ddd;
+		border-right: 1px solid #eee;
 	}
 
 	.site-header__logo-wrapper:last-of-type {
 		border: none;
 	}
 
-	.searchbox {
+	.search-box {
 		display: block;
-		position: relative;
-		bottom: -35px;
+		margin-top: 105px;
 	}
 }
