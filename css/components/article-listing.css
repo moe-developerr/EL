@@ -1,0 +1,34 @@
+/*========
+	Articles
+========*/
+.article {
+	display: block;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 0;
+	padding: 10px 0;
+}
+
+.article:hover {
+	text-decoration: none;
+	background-color: #eee;
+}
+
+.article__body {
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.article__title {
+	padding: 0;
+	padding-bottom: 5px;
+}
+
+.articles--highlights .article__title,
+.articles--highlights .articles__title {
+	color: #07a959;
+}
+
+.articles--new .article__title,
+.articles--new .articles__title {
+	color: #1e4582;
+}

@@ -1,0 +1,45 @@
+.panel {
+	margin-bottom: 10px;
+}
+
+.aside__filter {
+	height: 50px;
+}
+
+.aside__filter h4 {
+	margin: 0;
+}
+
+.search-field {
+	width: 100%;
+}
+
+.downloads .panel-body {
+	border: 1px solid #ddd;
+}
+
+.downloads__inner-wrapper {
+	margin-bottom: 30px;
+}
+
+.downloads__inner-wrapper:last-child {
+	margin-bottom: 0;
+}
+
+.downloads__inner-wrapper h4 {
+	margin-bottom: 5px;
+}
+
+.pagination .active a {
+	background-color: #07a959;
+	border-color: #07a959;
+}
+
+.pagination .active a:hover {
+	background-color: #0F7D0F;
+	border-color: #0F7D0F;
+}
+
+[data-toggle="dropdown"] {
+	width: 100%;
+}

@@ -6,7 +6,7 @@
 	blue: #1e4582;
 	white: #fff;
 	light gray: #eee;
-	darker gray: #aaa;
+	darker gray: #ddd;
 	dark gray: #333;
 =================*/
 
@@ -17,17 +17,22 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
+	color: #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+}
+
+a,
+a:hover {
+	color: #666;
 }
 
 ul {
 	list-style-type: none;
 	padding: 0;
 	margin-bottom: 0;
-}
-
-a,
-a:hover {
-	color: #666;
 }
 
 a:focus {
@@ -39,16 +44,16 @@ a:focus {
 	cursor: pointer;
 }
 
-.has-padding-bottom {
+.padding-bottom {
 	padding-bottom: 30px;
 }
 
-.has-padding {
+.padding-top-bottom {
 	padding-bottom: 30px;
 	padding-top: 30px;
 }
 
-.bg-gray {
+.bg-light-gray {
 	background-color: #eee;
 }
 
@@ -56,9 +61,65 @@ a:focus {
 	background-color: #07a959;
 }
 
-/*
-Uncomment to conditionally load arabic font in head.php
-font-family: 'Droid Arabic Kufi';
-font-weight: 400;
-font-weight: 700;
-*/
+.bg-blue {
+	background-color: #1e4582;
+}
+
+.text-red {
+	color: #b80304;
+}
+
+.text-darker-gray {
+	color: #ddd;
+}
+
+.text-gray {
+	color: #666;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-blue {
+	color: #1e4582;
+}
+
+.text-green {
+	color: #07a959;
+}
+
+.panel-heading {
+	margin: 0;
+}
+
+.icon {
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: bottom;
+	background-repeat: no-repeat;
+}
+
+.icon--highlight {
+	background-image: url(../../images/icon-highlights.png);
+	width: 46px;
+	height: 46px;
+}
+
+.icon--new {
+	background-image: url(../../images/icon-new.png);
+	width: 46px;
+	height: 46px;
+}
+
+.icon--download {
+	background-image: url(../../images/icon-download.png);
+	width: 17px;
+	height: 21px;
+}
+
+.icon--cloud {
+	background-image: url(../../images/icon-cloud.png);
+	width: 43px;
+	height: 31px;
+}

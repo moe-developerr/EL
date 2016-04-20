@@ -1,0 +1,27 @@
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+	border-bottom-width: 1px;
+}
+
+thead {
+	background-color: #1e4582;
+	color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #ddd; 
+}
+
+tbody tr:nth-child(even) {
+	background-color: #eee;
+}
+
+.downloads__link {
+	display: block;
+	color: #1e4582;
+	margin-bottom: 5px;
+}
+
+.downloads .panel-body {
+	border: 1px solid #ddd;
+}

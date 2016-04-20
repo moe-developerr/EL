@@ -223,7 +223,7 @@
 	/*========
 		Site nav
 	========*/
-	.site-nav__tab h4,
+	.site-nav__tab .site-nav__tab-title,
 	.site-nav__list-item,
 	.site-nav__sub-list-item {
 		cursor: pointer;
@@ -231,6 +231,7 @@
 
 	.site-nav__tabs {
 		border: none;
+
 	}
 
 	.site-nav__tab:hover .site-nav__list,
@@ -245,7 +246,7 @@
 	}
 
 	.site-nav__tab,
-	.site-nav__tab h4 {
+	.site-nav__tab .site-nav__tab-title {
 		height: 60px;
 		line-height: 60px;
 		margin: 0;
@@ -258,6 +259,10 @@
 	.site-nav__tab--active,
 	.site-nav__tab:hover {
 		background-color: #b80304;
+	}
+
+	.site-nav__tab--active .site-nav__tab-title,
+	.site-nav__tab:hover .site-nav__tab-title {
 		color: #fff;
 	}
 

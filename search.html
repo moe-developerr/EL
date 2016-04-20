@@ -11,12 +11,10 @@
 	<link rel="stylesheet" href="css/base/typo.css">
 	<link rel="stylesheet" href="css/layout/header.css">
 	<link rel="stylesheet" href="css/layout/footer.css">
-	<link rel="stylesheet" href="css/vendor/royalslider.css">
-	<link rel="stylesheet" href="css/vendor/royalslider-skin.css">
-	<link rel="stylesheet" href="css/components/slider.css">
 	<link rel="stylesheet" href="css/components/boxes.css">
 	<link rel="stylesheet" href="css/components/article-listing.css">
-	<link rel="stylesheet" href="css/arabic/index-ar.css">
+	<link rel="stylesheet" href="css/components/aside-nav.css">
+	<link rel="stylesheet" href="css/pages/search.css">
 </head>
 <body>
 	<header class="container site-header">
@@ -280,109 +278,98 @@
 		</nav>
 	</header>
 	<main class="main-content">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="slider rsDefault">
-					<div class="slide"><a href="images/image.jpg" class="rsImg"></a></div>
-					<div class="slide"><a href="images/image.jpg" class="rsImg"></a></div>
-				</div>
-			</div>
-		</div>
-		<section class="bg-light-gray padding-top-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<a href="#" class="panel box">
-							<h4 class="panel-heading">Baladiyat 2016</h4>
-						  <div class="panel-body" style="background-image:url(images/box1.jpg);">
-						  	<div class="box__overlay">Some text on hover</div>
-						  </div>
-						</a>
-					</div>
-					<div class="col-sm-6 col-md-4">
-						<a href="#" class="panel box">
-							<h4 class="panel-heading">Search for your ID card</h4>
-						  <div class="panel-body" style="background-image:url(images/box2.jpg);">
-						  	<div class="box__overlay">Some text on hover</div>
-						  </div>
-						</a>
-					</div>
-					<div class="col-sm-6 col-md-4">
-						<a href="#" class="panel box">
-							<h4 class="panel-heading">Are you a voter?</h4>
-						  <div class="panel-body" style="background-image:url(images/box3.jpg);">
-						  	<div class="box__overlay">Some text on hover</div>
-						  </div>
-						</a>
-					</div>
-					<div class="col-sm-6 col-md-4">
-						<a href="#" class="panel box">
-							<h4 class="panel-heading">Number of lebanese voters</h4>
-						  <div class="panel-body" style="background-image:url(images/box4.jpg);">
-						  	<div class="box__overlay">Some text on hover</div>
-						  </div>
-						</a>
-					</div>
-					<div class="col-sm-6 col-md-4">
-						<a href="#" class="panel box">
-							<h4 class="panel-heading">Make sure of your documents</h4>
-						  <div class="panel-body" style="background-image:url(images/box5.jpg);">
-						  	<div class="box__overlay">Some text on hover</div>
-						  </div>
-						</a>
-					</div>
-					<div class="col-sm-6 col-md-4">
-						<a href="#" class="panel box">
-							<h4 class="panel-heading">HOTLINE 1766</h4>
-						  <div class="panel-body" style="background-image:url(images/box6.jpg);">
-						  	<div class="box__overlay">Some text on hover</div>
-						  </div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
 		<section class="padding-top-bottom">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 articles--highlights">
-						<h3 class="articles__title"><span class="icon icon--highlight"></span>Highlights</h3>
-						<a href="#" class="panel article">
-							<h4 class="panel-heading article__title">19 Feb 2016</h4>
-							<div class="panel-body article__body">May 8 first day of Municipal Elections. May 22 Jezzine Parliamentary Elections</div>
-						</a>
-						<a href="#" class="panel article">
-							<h4 class="panel-heading article__title">19 Feb 2016</h4>
-							<div class="panel-body article__body">May 8 first day of Municipal Elections. May 22 Jezzine Parliamentary Elections</div>
-						</a>
-						<a href="#" class="panel article">
-							<h4 class="panel-heading article__title">19 Feb 2016</h4>
-							<div class="panel-body article__body">May 8 first day of Municipal Elections. May 22 Jezzine Parliamentary Elections</div>
-						</a>
-						<a href="#" class="panel article">
-							<h4 class="panel-heading article__title">19 Feb 2016</h4>
-							<div class="panel-body article__body">May 8 first day of Municipal Elections. May 22 Jezzine Parliamentary Elections</div>
-						</a>
-					</div>
-					<div class="col-md-4 articles--new">
-						<h3 class="articles__title"><span class="icon icon--new"></span>New on the website</h3>
-						<a href="#" class="panel article">
-							<h4 class="panel-heading article__title">19 Feb 2016</h4>
-							<div class="panel-body article__body">May 8 first day of Municipal Elections. May 22 Jezzine Parliamentary Elections</div>
-						</a>
-						<a href="#" class="panel article">
-							<h4 class="panel-heading article__title">19 Feb 2016</h4>
-							<div class="panel-body article__body">May 8 first day of Municipal Elections. May 22 Jezzine Parliamentary Elections</div>
-						</a>
-						<a href="#" class="panel article">
-							<h4 class="panel-heading article__title">19 Feb 2016</h4>
-							<div class="panel-body article__body">May 8 first day of Municipal Elections. May 22 Jezzine Parliamentary Elections</div>
-						</a>
-						<a href="#" class="panel article">
-							<h4 class="panel-heading article__title">19 Feb 2016</h4>
-							<div class="panel-body article__body">May 8 first day of Municipal Elections. May 22 Jezzine Parliamentary Elections</div>
-						</a>
-					</div>
+					
+					<!-- Aside Navigation -->
+					<aside class="col-sm-4">
+						<div class="panel aside__filter">
+							<div class="panel-body bg-blue">
+								<h4 class="text-white">Narrow Your Results</h4>
+							</div>
+						</div>
+						<div class="dropdown filter">
+						  <button class="btn bg-blue text-white dropdown-toggle aside__filter" type="button" data-toggle="dropdown">Year 2016
+						  <span class="caret"></span></button>
+						  <ul class="dropdown-menu">
+						    <li><a href="#">Year 2016</a></li>
+						    <li><a href="#">Year 2015</a></li>
+						    <li><a href="#">Year 2014</a></li>
+						  </ul>
+						</div>
+					</aside>
+
+					<section class="col-sm-8">
+						<!-- Current Location -->
+						<div class="current-location text-darker-gray"><small>Home > <a href="subpage-1.html" class="text-red">Search</a></small></div>
+						
+						<!-- Article -->
+						<article class="padding-bottom">
+							<h3 class="text-red">Search</h3>
+							<div class="panel panel-default bg-light-gray search">
+							  <div class="panel-body">
+							  	<div class="col-md-3">
+							  		<span>Current Search</span>
+							  	</div>
+							  	<div class="col-md-7">
+							  		<input type="text" class="search-field">
+							  	</div>
+							  	<div class="col-md-2">
+							  		<button class="btn btn-success">Search</button>
+							  	</div>
+							  </div>
+							</div>
+							<span>Showing Results 1 - 10 of 500</span>
+						</article>
+
+						<!-- Articles -->
+						<section class="articles--highlights clearfix">
+							<a href="#" class="panel article">
+								<h4 class="panel-heading article__title">How do I apply for a postal vote?</h4>
+								<div class="panel-body article__body">May 8 first day of Municipal Elections. May 22 Jezzine Parliamentary Elections</div>
+								<h5 class="text-green"><strong>Section:</strong> Voter <div class="pull-right text-gray">28-04-2015</div></h5>
+							</a>
+							<a href="#" class="panel article">
+								<h4 class="panel-heading article__title">How do I apply for a postal vote?</h4>
+								<div class="panel-body article__body">May 8 first day of Municipal Elections. May 22 Jezzine Parliamentary Elections</div>
+								<h5 class="text-green"><strong>Section:</strong> Voter <div class="pull-right text-gray">28-04-2015</div></h5>
+							</a>
+							<a href="#" class="panel article">
+								<h4 class="panel-heading article__title">How do I apply for a postal vote?</h4>
+								<div class="panel-body article__body">May 8 first day of Municipal Elections. May 22 Jezzine Parliamentary Elections</div>
+								<h5 class="text-green"><strong>Section:</strong> Voter <div class="pull-right text-gray">28-04-2015</div></h5>
+							</a>
+							<ul class="pagination pull-right">
+							  <li class="active"><a href="#">1</a></li>
+							  <li><a href="#">2</a></li>
+							  <li><a href="#">3</a></li>
+							  <li><a href="#">4</a></li>
+							  <li><a href="#">5</a></li>
+							  <li><a href="#">6</a></li>
+							  <li><a href="#">7</a></li>
+							  <li><a href="#">8</a></li>
+							  <li><a href="#">9</a></li>
+							  <li class="active"><a href="#">></a></li>
+							</ul>
+						</section>
+
+						<!-- Download Panel -->
+						<section class="panel downloads">
+							<h4 class="panel-heading bg-blue text-white">Suggested Articles</h4>
+							<div class="panel-body">
+								<div class="downloads__inner-wrapper">
+									<h4><a href="#" class="text-blue">Register to vote online</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium rerum culpa dicta qui aspernatur repellendus inventore itaque sit repudiandae adipisci.</p>
+								</div>
+								<div class="downloads__inner-wrapper">
+									<h4><a href="#" class="text-blue">Find out about registering to vote</a></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium rerum culpa dicta qui aspernatur repellendus inventore itaque sit repudiandae adipisci.</p>
+								</div>
+							</div>
+						</section>
+					</section>
+
 				</div>
 			</div>
 		</section>
@@ -463,21 +450,7 @@
 		</footer>
 	</footer>
 	<script src="js/vendor/jquery-2.1.4.min.js"></script>
-	<script src="js/vendor/jquery.royalslider.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="js/index.js"></script>
-	<script>
-	/*===========
-		Init slider
-	===========*/
-	(function () {
-		!function _init() {
-			$('.slider').royalSlider({
-				autoScaleSlider: false,
-				imageScaleMode: 'fill',
-				controlNavigation: false
-			});
-		}();
-	})();
-	</script>
 </body>
 </html>

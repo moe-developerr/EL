@@ -4,7 +4,6 @@
 var searchBox = (function () {
 	var $searchBtn = $('.search-btn');
 	var $searchBox = $('.search-box');
-	var isSearchOpen = false;
 	var $mobileSiteNav = $('.mobile-site-nav');
 
 	!function _init() {

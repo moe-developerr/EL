@@ -1,0 +1,64 @@
+/*=====
+	boxes
+=====*/
+.box {
+	display: block;
+	border: none;
+	min-height: 240px;
+}
+
+.box:hover {
+	text-decoration: none;
+}
+
+.box .panel-heading {
+	color: #b80304;
+}
+
+.box .panel-body {
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	min-height: 200px;
+}
+
+.box__overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translateY(100%);
+	    -ms-transform: translateY(100%);
+	        transform: translateY(100%);
+	-webkit-transition: -webkit-transform .3s;
+	transition: -webkit-transform .3s;
+	transition: transform .3s;
+	transition: transform .3s, -webkit-transform .3s;
+	background-color: rgba(255, 255, 255, .8);
+	padding: 20px 10px;
+}
+
+.box:hover .panel-heading {
+	background-color: #b80304;
+	color: #fff;
+}
+
+.box:hover .box__overlay {
+	-webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	        transform: translateY(0);
+}
+
+/*==============
+ Mobile phones
+==============*/
+@media all and (max-width: 767px) {
+	.box {
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
